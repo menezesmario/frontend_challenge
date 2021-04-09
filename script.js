@@ -6,10 +6,19 @@ const req = fetch(url)
         const items = jsonBody.products;
 
         shopProducts = () => {
-            document.getElementById('products');
+            let productsContainer = document.getElementById('products');
             items.map((data) => {
-                console.log(data.name)
-
+                productsContainer.innerHTML+= `                
+                <div class="product" key=`+data.id+` >
+                    <img src="`+data.image+`" />
+                    <p class="product-name">`+data.name+`</p>
+                    <p class="product-description">`+data.description+`</p>
+                    <p class="old-price">`+data.oldPrice+`</p>
+                    <p class="price">`+data.price+`</p>
+                    <p class="instalments">`+data.installments.count+` x `+data.installments.value+`</p>
+                </div>
+                
+                `
             })
         }
 
