@@ -1,0 +1,30 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 399px;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+header button {
+    color: #888888;
+}
+
+footer {
+    top: 2151px;
+    left: 0px;
+    width: 1500px;
+    height: 293px;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}

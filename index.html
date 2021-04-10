@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Linx Test</title>
 </head>
 <body>
-    <div id="products"></div>
+    <header>
+        <div class="bg-skew">
+            <div class="header-content">
+                <h1>uma seleção de produtos</h1>
+                <h1>especial para você</h1>
+                <h2>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h2>
+                <nav>
+                    <button>Conheça a Linx</button>
+                    <button>Ajude o algoritmo</button>            
+                    <button>Seus produtos</button>            
+                    <button>Compartilhe</button>           
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="form-container">
+        <div class="form-content">
+            <h2>Ajude o algoritmo a ser mais certeiro</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam facere et sapiente nihil error similique ratione aliquid esse quos, natus odio aspernatur blanditiis voluptates sed? Ipsa est vel doloremque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda facilis quaerat ratione, nemo ut nihil! Amet laborum aliquam sequi illo, accusantium molestias eveniet nobis sunt quos quia fugiat? Sapiente, deleniti?</p>
+        </div>
+        <div class="form">
+            <label for="name">Seu nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="e-mail">E-mail</label><br>
+            <input type="email" id="e-mail" name="e-mail"><br>
+            <label for="cpf">CPF</label><br>
+            <input type="number" id="cpf" name="cpf"><br>
+            <label for="male">Masculino</label><br>
+            <input type="radio" id="male" name="gender" value="male"><br>
+            <label for="female">Female</label><br>
+            <input type="radio" id="female" name="gender" value="female"><br>
+            <input type="submit" value="Submit">
+        </div>
+    </section>
+    <section class="special-container">
+        <h1>Sua seleção Especial</h1>
+        <div id="products"></div>
+        <button class="more-products">Ainda mais produtos aqui</button>
+    </section>
+    <section class="share-container">
+        <h1>Compartilhe a novidade</h1>
+            <label for="friend-name">Nome do seu amigo:</label><br>
+            <input type="text" id="friend-name" name="friend-name"><br>
+            <label for="friend-email">E-mail:</label><br>
+            <input type="email" id="friend-email" name="friend-email"><br>
+            <input type="submit" value="Enviar agora">
+    </section>
+
+    <footer>
+        <p>Testando suas habilidades em HTML, CSS e JS</p>
+        <p>Linx Impulse</p>
+        <p>2019</p>
+    </footer>
+    
     <script src="./script.js"></script>
 </body>
 </html>
