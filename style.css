@@ -22,20 +22,28 @@ button {
 /* HEADER */
 
 .header-skew {
-    margin-top: -100px;
+    position: absolute;
+    top: 0;
     width: 100vw;
-    height: 420px;
-    background: #707070 0% 0% no-repeat padding-box;
-    transform: skewY(6deg);
+    height: 400px;
+    background: #707070; 
+    border: 0;   
 }
 
 .header-content {
-    padding-top: 150px;
-    color: #FFF;
-    transform: skewY(-6deg);
+    padding-top: 70px;
+    color: #FFF;    
     text-align: center;
 
 }
+
+header svg {
+    position: absolute;
+    margin-top: 300px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
 
 .header-content{
     font-family: Helvetica Neue, sans-serif;
@@ -331,7 +339,7 @@ footer {
 .footer-skew {
     margin-top: 70px ;
     width: 100vw;
-    height: 420px;
+    height: 300px;
     background: #707070 0% 0% no-repeat padding-box;
     position: absolute;
     margin-bottom: ;: -1500px;
@@ -342,12 +350,12 @@ svg {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 10vw;
+    height: 5vw;
     /* set height to pixels if you want angle to change with screen width */
   }
 
 .footer-content {
-    padding-top: 20vh;
+    padding-top: 10vh;
     color: #FFF;
     text-align: center;
     font-size: 12px;    
