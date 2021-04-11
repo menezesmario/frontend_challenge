@@ -28,8 +28,11 @@
     <section class="form-container">
         <div class="form-content">
             <h2>Ajude o algoritmo a ser mais certeiro</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam facere et sapiente nihil error similique ratione aliquid esse quos, natus odio aspernatur blanditiis voluptates sed? Ipsa est vel doloremque suscipit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda facilis quaerat ratione, nemo ut nihil! Amet laborum aliquam sequi illo, accusantium molestias eveniet nobis sunt quos quia fugiat? Sapiente, deleniti?</p>
+            <div class="lorem">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam facere et sapiente nihil error similique ratione aliquid esse quos, natus odio aspernatur blanditiis voluptates sed? Ipsa est vel doloremque suscipit.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda facilis quaerat ratione, nemo ut nihil! Amet laborum aliquam sequi illo, accusantium molestias eveniet nobis sunt quos quia fugiat? Sapiente, deleniti?</p>
+            </div>
         </div>
         <div class="form">
             <label for="name">Seu nome:</label><br>
@@ -38,6 +41,7 @@
             <input type="email" id="e-mail" name="e-mail"><br>
             <label for="cpf">CPF</label><br>
             <input type="number" id="cpf" name="cpf"><br>
+
             <label for="male">Masculino</label><br>
             <input type="radio" id="male" name="gender" value="male"><br>
             <label for="female">Female</label><br>
@@ -45,11 +49,15 @@
             <input type="submit" value="Submit">
         </div>
     </section>
+
     <section class="special-container">
         <h1>Sua seleção Especial</h1>
-        <div id="products"></div>
+        <div id="products">
+        </div>
         <button class="more-products">Ainda mais produtos aqui</button>
+    
     </section>
+
     <section class="share-container">
         <h1>Compartilhe a novidade</h1>
             <label for="friend-name">Nome do seu amigo:</label><br>

@@ -8,15 +8,18 @@ const req = fetch(url)
         shopProducts = () => {
             let productsContainer = document.getElementById('products');
             items.map((data) => {
-                productsContainer.innerHTML+= `                
-                <div class="product" key=`+data.id+` >
-                    <img src="`+data.image+`" />
-                    <p class="product-name">`+data.name+`</p>
-                    <p class="product-description">`+data.description+`</p>
-                    <p class="old-price">`+data.oldPrice+`</p>
-                    <p class="price">`+data.price+`</p>
-                    <p class="instalments">`+data.installments.count+` x `+data.installments.value+`</p>
-                </div>
+                productsContainer.innerHTML+= `                                
+                    <div class="product" key=`+data.id+` >
+                    <div class="img-container">
+                        <img src="`+data.image+`" />
+                    </div>
+                        <p class="product-name">`+data.name+`</p>
+                        <p class="product-description">`+data.description+`</p>
+                        <p class="old-price">De: R$`+data.oldPrice+`,00</p>
+                        <p class="price">Por: R$`+data.price+`,00</p>
+                        <p class="instalments">ou `+data.installments.count+` x `+data.installments.value+`0</p>
+                        <button class="btn-buy">Comprar</button>
+                    </div>                
                 
                 `
             })
