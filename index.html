@@ -37,21 +37,22 @@
         <div class="form">
             <label for="name">Seu nome:</label><br>
             <input type="text" id="name" name="name"><br>
-            <label for="e-mail">E-mail</label><br>
+            <label for="e-mail">E-mail:</label><br>
             <input type="email" id="e-mail" name="e-mail"><br>
-            <label for="cpf">CPF</label><br>
+            <label for="cpf">CPF:</label><br>
             <input type="number" id="cpf" name="cpf"><br>
-
-            <label for="male">Masculino</label><br>
-            <input type="radio" id="male" name="gender" value="male"><br>
-            <label for="female">Female</label><br>
-            <input type="radio" id="female" name="gender" value="female"><br>
-            <input type="submit" value="Submit">
+            <div class="gender-section">
+                <input type="radio" id="male" name="gender" value="male"><br>
+                <label for="male">Masculino</label><br>
+                <input type="radio" id="female" name="gender" value="female"><br>
+                <label for="female">Female</label><br>  
+            </div>
+            <input class="btn-lead" type="submit" value="Submit">
         </div>
     </section>
 
     <section class="special-container">
-        <h1>Sua seleção Especial</h1>
+        <h2>Sua seleção Especial</h2>
         <div id="products">
         </div>
         <button class="more-products">Ainda mais produtos aqui</button>

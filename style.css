@@ -77,6 +77,9 @@ main {
     display: flex;
     justify-content: center;
     height: 300px;
+    font-size: 12px;
+
+
 }
 
 .form-content {
@@ -97,26 +100,55 @@ main {
     margin-top: 30px;
     font-size: 16px;
     font-weight: 100;
+
 }
 
 .form {
     width: 340px;
+
 }
 
 .form input {
     width: 340px;
+    height: 30px ;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+
+.form .btn-lead {
+    height: 40px;
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.gender-section {
+    display: flex;
+    font-size: 12px;
+    align-items: baseline;
+}
+
+
+input[type=radio] {
+    height: 14px;
+    
 }
 
 /* PRODUCTS */
 
 .special-container {
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
 } 
 
+.special-container h2 {
+    font-size: 18px;
+}
+
+
 #products {
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -129,6 +161,7 @@ main {
 
 
 .product {
+    margin-top: 40px;
     max-width: 200px;
     color: #888888;
 }
