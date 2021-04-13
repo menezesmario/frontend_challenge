@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loader.css">
     <title>Linx Test</title>
 </head>
 <body>
     <header>
+
         <div class="header-skew">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="0,100 0,0 100,100"/>
+            </svg> 
+           
             <div class="header-content">
                 <h1>uma seleção de produtos<br>
                 <span class="h1-bold"> especial para você </span></h1>
@@ -23,44 +29,44 @@
                 </nav>
             </div>                          
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="white" points="0,100 0,0 100,100"/>
-        </svg>     
+        
+           
     </header>
     <main>
-    <section class="form-container">
-        <div class="form-content">
-            <h2>Ajude o algoritmo a ser mais certeiro</h2>
-            <div class="lorem">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam facere et sapiente nihil error similique ratione aliquid esse quos, natus odio aspernatur blanditiis voluptates sed? Ipsa est vel doloremque suscipit.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda facilis quaerat ratione, nemo ut nihil! Amet laborum aliquam sequi illo, accusantium molestias eveniet nobis sunt quos quia fugiat? Sapiente, deleniti?</p>
+        <section class="form-container">
+            <div class="form-content">
+                <h2>Ajude o algoritmo a ser mais certeiro</h2>
+                <div class="lorem">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam facere et sapiente nihil error similique ratione aliquid esse quos, natus odio aspernatur blanditiis voluptates sed? Ipsa est vel doloremque suscipit.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda facilis quaerat ratione, nemo ut nihil! Amet laborum aliquam sequi illo, accusantium molestias eveniet nobis sunt quos quia fugiat? Sapiente, deleniti?</p>
+                </div>
             </div>
-        </div>
-        <div class="form">
-            <label for="name">Seu nome:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="e-mail">E-mail:</label><br>
-            <input type="email" id="e-mail" name="e-mail"><br>
-            <label for="cpf">CPF:</label><br>
-            <input type="number" id="cpf" name="cpf"><br>
-            <div class="gender-section">
-                <input type="radio" id="male" name="gender" value="male"><br>
-                <label for="male">Masculino</label><br>
-                <input type="radio" id="female" name="gender" value="female"><br>
-                <label for="female">Female</label><br>  
+            <div class="form">
+                <label for="name">Seu nome:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="e-mail">E-mail:</label><br>
+                <input type="email" id="e-mail" name="e-mail"><br>
+                <label for="cpf">CPF:</label><br>
+                <input type="number" id="cpf" name="cpf"><br>
+                <div class="gender-section">
+                    <input type="radio" id="male" name="gender" value="male"><br>
+                    <label for="male">Masculino</label><br>
+                    <input type="radio" id="female" name="gender" value="female"><br>
+                    <label for="female">Female</label><br>  
+                </div>
+                <input class="btn-lead" type="submit" value="Submit">
             </div>
-            <input class="btn-lead" type="submit" value="Submit">
-        </div>
-    </section>
+        </section>
 
     <section class="special-container">
         <hr>
         <h2 class="section-title">Sua seleção Especial</h2>
-        <div id="products">
+        <div id="products"></div>
+        <button id="more" class="more-products">Ainda mais produtos aqui</button>
+        <div class="loader">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
-        <button class="more-products">Ainda mais produtos aqui</button>
-    
     </section>
 
     <section class="share-container">
